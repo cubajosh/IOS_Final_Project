@@ -1,0 +1,732 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDC4156D2B02F87700992EE6 /* UWorkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC4156C2B02F87700992EE6 /* UWorkApp.swift */; };
+		DDC4156F2B02F87700992EE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC4156E2B02F87700992EE6 /* ContentView.swift */; };
+		DDC415712B02F87900992EE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC415702B02F87900992EE6 /* Assets.xcassets */; };
+		DDC415742B02F87900992EE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC415732B02F87900992EE6 /* Preview Assets.xcassets */; };
+		DDC4157E2B02F87A00992EE6 /* UWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC4157D2B02F87A00992EE6 /* UWorkTests.swift */; };
+		DDC415882B02F87A00992EE6 /* UWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415872B02F87A00992EE6 /* UWorkUITests.swift */; };
+		DDC4158A2B02F87A00992EE6 /* UWorkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415892B02F87A00992EE6 /* UWorkUITestsLaunchTests.swift */; };
+		DDC4159B2B02F90900992EE6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DDC4159A2B02F90900992EE6 /* FirebaseFirestore */; };
+		DDC4159D2B02F90900992EE6 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DDC4159C2B02F90900992EE6 /* FirebaseFirestoreSwift */; };
+		DDC4159F2B02F95E00992EE6 /* WorkerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC4159E2B02F95E00992EE6 /* WorkerModel.swift */; };
+		DDC415A12B02F96D00992EE6 /* JobDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415A02B02F96D00992EE6 /* JobDetailsModel.swift */; };
+		DDC415A32B02F99B00992EE6 /* WorkerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415A22B02F99B00992EE6 /* WorkerViewModel.swift */; };
+		DDC415A52B02F9AC00992EE6 /* JobDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415A42B02F9AC00992EE6 /* JobDetailViewModel.swift */; };
+		DDC415AD2B02FA0200992EE6 /* IncomingJobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415A62B02FA0200992EE6 /* IncomingJobsView.swift */; };
+		DDC415AE2B02FA0200992EE6 /* AcceptedJobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415A72B02FA0200992EE6 /* AcceptedJobs.swift */; };
+		DDC415AF2B02FA0200992EE6 /* TradeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415A82B02FA0200992EE6 /* TradeListView.swift */; };
+		DDC415B02B02FA0200992EE6 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415A92B02FA0200992EE6 /* ChatBubble.swift */; };
+		DDC415B12B02FA0200992EE6 /* acceptJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415AA2B02FA0200992EE6 /* acceptJob.swift */; };
+		DDC415B22B02FA0200992EE6 /* WorkerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415AB2B02FA0200992EE6 /* WorkerListView.swift */; };
+		DDC415B32B02FA0200992EE6 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415AC2B02FA0200992EE6 /* MessageView.swift */; };
+		DDC415B52B02FB0800992EE6 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415B42B02FB0800992EE6 /* SignUpView.swift */; };
+		DDC415B72B02FBFE00992EE6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415B62B02FBFD00992EE6 /* LoginView.swift */; };
+		DDC415B92B03CCC400992EE6 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415B82B03CCC400992EE6 /* MainTabView.swift */; };
+		DDC415BB2B03D47C00992EE6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDC415BA2B03D47C00992EE6 /* GoogleService-Info.plist */; };
+		DDC415BE2B03D4DA00992EE6 /* UWorkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415BD2B03D4DA00992EE6 /* UWorkRepository.swift */; };
+		DDC415C02B03D82800992EE6 /* JobDetailsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415BF2B03D82800992EE6 /* JobDetailsRepository.swift */; };
+		DDC415C22B03E26800992EE6 /* UpdateAcceptedJobSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC415C12B03E26800992EE6 /* UpdateAcceptedJobSheet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDC4157A2B02F87A00992EE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC415612B02F87700992EE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDC415682B02F87700992EE6;
+			remoteInfo = UWork;
+		};
+		DDC415842B02F87A00992EE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC415612B02F87700992EE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDC415682B02F87700992EE6;
+			remoteInfo = UWork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDC415692B02F87700992EE6 /* UWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC4156C2B02F87700992EE6 /* UWorkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWorkApp.swift; sourceTree = "<group>"; };
+		DDC4156E2B02F87700992EE6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DDC415702B02F87900992EE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDC415732B02F87900992EE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DDC415792B02F87A00992EE6 /* UWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC4157D2B02F87A00992EE6 /* UWorkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWorkTests.swift; sourceTree = "<group>"; };
+		DDC415832B02F87A00992EE6 /* UWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDC415872B02F87A00992EE6 /* UWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWorkUITests.swift; sourceTree = "<group>"; };
+		DDC415892B02F87A00992EE6 /* UWorkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWorkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DDC4159E2B02F95E00992EE6 /* WorkerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerModel.swift; sourceTree = "<group>"; };
+		DDC415A02B02F96D00992EE6 /* JobDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsModel.swift; sourceTree = "<group>"; };
+		DDC415A22B02F99B00992EE6 /* WorkerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkerViewModel.swift; sourceTree = "<group>"; };
+		DDC415A42B02F9AC00992EE6 /* JobDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailViewModel.swift; sourceTree = "<group>"; };
+		DDC415A62B02FA0200992EE6 /* IncomingJobsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncomingJobsView.swift; sourceTree = "<group>"; };
+		DDC415A72B02FA0200992EE6 /* AcceptedJobs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcceptedJobs.swift; sourceTree = "<group>"; };
+		DDC415A82B02FA0200992EE6 /* TradeListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradeListView.swift; sourceTree = "<group>"; };
+		DDC415A92B02FA0200992EE6 /* ChatBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		DDC415AA2B02FA0200992EE6 /* acceptJob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = acceptJob.swift; sourceTree = "<group>"; };
+		DDC415AB2B02FA0200992EE6 /* WorkerListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkerListView.swift; sourceTree = "<group>"; };
+		DDC415AC2B02FA0200992EE6 /* MessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		DDC415B42B02FB0800992EE6 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		DDC415B62B02FBFD00992EE6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DDC415B82B03CCC400992EE6 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		DDC415BA2B03D47C00992EE6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DDC415BD2B03D4DA00992EE6 /* UWorkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UWorkRepository.swift; sourceTree = "<group>"; };
+		DDC415BF2B03D82800992EE6 /* JobDetailsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailsRepository.swift; sourceTree = "<group>"; };
+		DDC415C12B03E26800992EE6 /* UpdateAcceptedJobSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAcceptedJobSheet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDC415662B02F87700992EE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC4159B2B02F90900992EE6 /* FirebaseFirestore in Frameworks */,
+				DDC4159D2B02F90900992EE6 /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC415762B02F87A00992EE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC415802B02F87A00992EE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDC415602B02F87700992EE6 = {
+			isa = PBXGroup;
+			children = (
+				DDC4156B2B02F87700992EE6 /* UWork */,
+				DDC4157C2B02F87A00992EE6 /* UWorkTests */,
+				DDC415862B02F87A00992EE6 /* UWorkUITests */,
+				DDC4156A2B02F87700992EE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDC4156A2B02F87700992EE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDC415692B02F87700992EE6 /* UWork.app */,
+				DDC415792B02F87A00992EE6 /* UWorkTests.xctest */,
+				DDC415832B02F87A00992EE6 /* UWorkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDC4156B2B02F87700992EE6 /* UWork */ = {
+			isa = PBXGroup;
+			children = (
+				DDC415BC2B03D4B000992EE6 /* Repository */,
+				DDC415BA2B03D47C00992EE6 /* GoogleService-Info.plist */,
+				DDC415982B02F8BD00992EE6 /* Model */,
+				DDC415972B02F8B000992EE6 /* ViewModel */,
+				DDC415962B02F8A300992EE6 /* View */,
+				DDC4156C2B02F87700992EE6 /* UWorkApp.swift */,
+				DDC4156E2B02F87700992EE6 /* ContentView.swift */,
+				DDC415702B02F87900992EE6 /* Assets.xcassets */,
+				DDC415722B02F87900992EE6 /* Preview Content */,
+			);
+			path = UWork;
+			sourceTree = "<group>";
+		};
+		DDC415722B02F87900992EE6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DDC415732B02F87900992EE6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDC4157C2B02F87A00992EE6 /* UWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDC4157D2B02F87A00992EE6 /* UWorkTests.swift */,
+			);
+			path = UWorkTests;
+			sourceTree = "<group>";
+		};
+		DDC415862B02F87A00992EE6 /* UWorkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDC415872B02F87A00992EE6 /* UWorkUITests.swift */,
+				DDC415892B02F87A00992EE6 /* UWorkUITestsLaunchTests.swift */,
+			);
+			path = UWorkUITests;
+			sourceTree = "<group>";
+		};
+		DDC415962B02F8A300992EE6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDC415A72B02FA0200992EE6 /* AcceptedJobs.swift */,
+				DDC415AA2B02FA0200992EE6 /* acceptJob.swift */,
+				DDC415A92B02FA0200992EE6 /* ChatBubble.swift */,
+				DDC415A62B02FA0200992EE6 /* IncomingJobsView.swift */,
+				DDC415AC2B02FA0200992EE6 /* MessageView.swift */,
+				DDC415A82B02FA0200992EE6 /* TradeListView.swift */,
+				DDC415AB2B02FA0200992EE6 /* WorkerListView.swift */,
+				DDC415B42B02FB0800992EE6 /* SignUpView.swift */,
+				DDC415B62B02FBFD00992EE6 /* LoginView.swift */,
+				DDC415B82B03CCC400992EE6 /* MainTabView.swift */,
+				DDC415C12B03E26800992EE6 /* UpdateAcceptedJobSheet.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDC415972B02F8B000992EE6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DDC415A22B02F99B00992EE6 /* WorkerViewModel.swift */,
+				DDC415A42B02F9AC00992EE6 /* JobDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DDC415982B02F8BD00992EE6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDC4159E2B02F95E00992EE6 /* WorkerModel.swift */,
+				DDC415A02B02F96D00992EE6 /* JobDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDC415BC2B03D4B000992EE6 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				DDC415BD2B03D4DA00992EE6 /* UWorkRepository.swift */,
+				DDC415BF2B03D82800992EE6 /* JobDetailsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDC415682B02F87700992EE6 /* UWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC4158D2B02F87A00992EE6 /* Build configuration list for PBXNativeTarget "UWork" */;
+			buildPhases = (
+				DDC415652B02F87700992EE6 /* Sources */,
+				DDC415662B02F87700992EE6 /* Frameworks */,
+				DDC415672B02F87700992EE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UWork;
+			packageProductDependencies = (
+				DDC4159A2B02F90900992EE6 /* FirebaseFirestore */,
+				DDC4159C2B02F90900992EE6 /* FirebaseFirestoreSwift */,
+			);
+			productName = UWork;
+			productReference = DDC415692B02F87700992EE6 /* UWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDC415782B02F87A00992EE6 /* UWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC415902B02F87A00992EE6 /* Build configuration list for PBXNativeTarget "UWorkTests" */;
+			buildPhases = (
+				DDC415752B02F87A00992EE6 /* Sources */,
+				DDC415762B02F87A00992EE6 /* Frameworks */,
+				DDC415772B02F87A00992EE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDC4157B2B02F87A00992EE6 /* PBXTargetDependency */,
+			);
+			name = UWorkTests;
+			productName = UWorkTests;
+			productReference = DDC415792B02F87A00992EE6 /* UWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDC415822B02F87A00992EE6 /* UWorkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDC415932B02F87A00992EE6 /* Build configuration list for PBXNativeTarget "UWorkUITests" */;
+			buildPhases = (
+				DDC4157F2B02F87A00992EE6 /* Sources */,
+				DDC415802B02F87A00992EE6 /* Frameworks */,
+				DDC415812B02F87A00992EE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDC415852B02F87A00992EE6 /* PBXTargetDependency */,
+			);
+			name = UWorkUITests;
+			productName = UWorkUITests;
+			productReference = DDC415832B02F87A00992EE6 /* UWorkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDC415612B02F87700992EE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DDC415682B02F87700992EE6 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					DDC415782B02F87A00992EE6 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = DDC415682B02F87700992EE6;
+					};
+					DDC415822B02F87A00992EE6 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = DDC415682B02F87700992EE6;
+					};
+				};
+			};
+			buildConfigurationList = DDC415642B02F87700992EE6 /* Build configuration list for PBXProject "UWork" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDC415602B02F87700992EE6;
+			packageReferences = (
+				DDC415992B02F90900992EE6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = DDC4156A2B02F87700992EE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDC415682B02F87700992EE6 /* UWork */,
+				DDC415782B02F87A00992EE6 /* UWorkTests */,
+				DDC415822B02F87A00992EE6 /* UWorkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDC415672B02F87700992EE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC415742B02F87900992EE6 /* Preview Assets.xcassets in Resources */,
+				DDC415712B02F87900992EE6 /* Assets.xcassets in Resources */,
+				DDC415BB2B03D47C00992EE6 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC415772B02F87A00992EE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC415812B02F87A00992EE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDC415652B02F87700992EE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC415AF2B02FA0200992EE6 /* TradeListView.swift in Sources */,
+				DDC415B02B02FA0200992EE6 /* ChatBubble.swift in Sources */,
+				DDC415BE2B03D4DA00992EE6 /* UWorkRepository.swift in Sources */,
+				DDC4156F2B02F87700992EE6 /* ContentView.swift in Sources */,
+				DDC415B92B03CCC400992EE6 /* MainTabView.swift in Sources */,
+				DDC415B72B02FBFE00992EE6 /* LoginView.swift in Sources */,
+				DDC415A32B02F99B00992EE6 /* WorkerViewModel.swift in Sources */,
+				DDC415B12B02FA0200992EE6 /* acceptJob.swift in Sources */,
+				DDC415C02B03D82800992EE6 /* JobDetailsRepository.swift in Sources */,
+				DDC415B32B02FA0200992EE6 /* MessageView.swift in Sources */,
+				DDC4156D2B02F87700992EE6 /* UWorkApp.swift in Sources */,
+				DDC415A12B02F96D00992EE6 /* JobDetailsModel.swift in Sources */,
+				DDC415AE2B02FA0200992EE6 /* AcceptedJobs.swift in Sources */,
+				DDC415B22B02FA0200992EE6 /* WorkerListView.swift in Sources */,
+				DDC415B52B02FB0800992EE6 /* SignUpView.swift in Sources */,
+				DDC415C22B03E26800992EE6 /* UpdateAcceptedJobSheet.swift in Sources */,
+				DDC4159F2B02F95E00992EE6 /* WorkerModel.swift in Sources */,
+				DDC415AD2B02FA0200992EE6 /* IncomingJobsView.swift in Sources */,
+				DDC415A52B02F9AC00992EE6 /* JobDetailViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC415752B02F87A00992EE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC4157E2B02F87A00992EE6 /* UWorkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC4157F2B02F87A00992EE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDC415882B02F87A00992EE6 /* UWorkUITests.swift in Sources */,
+				DDC4158A2B02F87A00992EE6 /* UWorkUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDC4157B2B02F87A00992EE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDC415682B02F87700992EE6 /* UWork */;
+			targetProxy = DDC4157A2B02F87A00992EE6 /* PBXContainerItemProxy */;
+		};
+		DDC415852B02F87A00992EE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDC415682B02F87700992EE6 /* UWork */;
+			targetProxy = DDC415842B02F87A00992EE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DDC4158B2B02F87A00992EE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDC4158C2B02F87A00992EE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDC4158E2B02F87A00992EE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UWork/Preview Content\"";
+				DEVELOPMENT_TEAM = Q2R7H37TP9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDC4158F2B02F87A00992EE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"UWork/Preview Content\"";
+				DEVELOPMENT_TEAM = Q2R7H37TP9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDC415912B02F87A00992EE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q2R7H37TP9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UWork.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UWork";
+			};
+			name = Debug;
+		};
+		DDC415922B02F87A00992EE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q2R7H37TP9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UWork.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UWork";
+			};
+			name = Release;
+		};
+		DDC415942B02F87A00992EE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q2R7H37TP9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UWork;
+			};
+			name = Debug;
+		};
+		DDC415952B02F87A00992EE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q2R7H37TP9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UWork;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDC415642B02F87700992EE6 /* Build configuration list for PBXProject "UWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC4158B2B02F87A00992EE6 /* Debug */,
+				DDC4158C2B02F87A00992EE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC4158D2B02F87A00992EE6 /* Build configuration list for PBXNativeTarget "UWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC4158E2B02F87A00992EE6 /* Debug */,
+				DDC4158F2B02F87A00992EE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC415902B02F87A00992EE6 /* Build configuration list for PBXNativeTarget "UWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC415912B02F87A00992EE6 /* Debug */,
+				DDC415922B02F87A00992EE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDC415932B02F87A00992EE6 /* Build configuration list for PBXNativeTarget "UWorkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDC415942B02F87A00992EE6 /* Debug */,
+				DDC415952B02F87A00992EE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDC415992B02F90900992EE6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.17.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDC4159A2B02F90900992EE6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDC415992B02F90900992EE6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DDC4159C2B02F90900992EE6 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDC415992B02F90900992EE6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DDC415612B02F87700992EE6 /* Project object */;
+}
